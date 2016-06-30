@@ -5,7 +5,7 @@
 ## Install
 
 ```bash
-$ npm install --save meido
+$ npm install -g meido
 ```
 
 ## Usage
