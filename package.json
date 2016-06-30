@@ -1,0 +1,46 @@
+{
+  "name": "meido",
+  "version": "0.0.0",
+  "description": "A more straight-forward and friendly meido for serving static files.",
+  "license": "MIT",
+  "repository": "egoist/meido",
+  "author": {
+    "name": "EGOIST",
+    "email": "0x142857@gmail.com",
+    "url": "github.com/egoist"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo lib/*"
+  },
+  "files": [
+    "cli.js",
+    "lib"
+  ],
+  "bin": "cli.js",
+  "main": "./lib/index.js",
+  "keywords": [
+    "serve"
+  ],
+  "devDependencies": {
+    "xo": "latest"
+  },
+  "xo": {
+    "semicolon": false,
+    "space": 2,
+    "rules": {
+      "curly": ["error", "multi"]
+    }
+  },
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "express": "^4.14.0",
+    "meow": "^3.7.0",
+    "morgan": "^1.7.0",
+    "opn": "^4.0.2",
+    "serve-index": "^1.8.0",
+    "tildify": "^1.2.0"
+  }
+}
