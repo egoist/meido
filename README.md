@@ -22,6 +22,9 @@ $ meido --open
 
 # serve in different port
 $ meido --port 4000
+
+# help
+$ meido --help
 ```
 
 ![preview](https://ooo.0o0.ooo/2016/06/30/577539a3abd11.png)
@@ -32,7 +35,7 @@ Obviously, `meido` is the prononciation of `メイド` in Japanese, which means 
 
 ## How is it different from tj/serve?
 
-As how `meido` describe herself, more straight-forward and friendly.
+As how `meido` describes herself, more straight-forward and friendly.
 
 ## License
 
