@@ -19,5 +19,8 @@ const cli = meow(`
   }
 })
 
-const dir = cli.input[0]
-main(dir, cli.flags)
+const options = cli.flags
+options.dir = cli.input[0]
+main(options, app => {
+  console.log(`Listenning at http://localhost:${app.get('port')}`)
+})
