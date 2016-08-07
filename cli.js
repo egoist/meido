@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 'use strict'
 const meow = require('meow')
+const opn = require('opn')
 const main = require('./lib')
 
 const cli = meow(`
@@ -22,5 +23,7 @@ const cli = meow(`
 const options = cli.flags
 options.dir = cli.input[0]
 main(options, app => {
-  console.log(`Listenning at http://localhost:${app.get('port')}`)
+  const url = `http://localhost:${app.get('port')}`
+  console.log(`Listenning at ${url}`)
+  if (options.open) return opn(url)
 })
