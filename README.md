@@ -43,6 +43,36 @@ import meido from 'meido'
 meido(options, callback)
 ```
 
+### options
+
+#### port
+
+Type: `number`<br>
+Default: `3000`
+
+#### dir
+
+Type: `string`<br>
+Default: `./`
+
+The directory to serve.
+
+#### open
+
+> CLI only
+
+Type: `boolean`<br>
+Default: `false`
+
+Open the webpage in browser after the server is established.
+
+### callback
+
+Type: `function`<br>
+Args: `app` - Express server instance
+
+Run the callback function after the server is established. You can get the server port by `app.get('port')`
+
 ## License
 
 MIT © [EGOIST](https://github.com/egoist)
