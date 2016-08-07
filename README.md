@@ -27,8 +27,6 @@ $ meido --port 4000
 $ meido --help
 ```
 
-![preview](https://ooo.0o0.ooo/2016/06/30/577539a3abd11.png)
-
 ### What does meido stand for?
 
 Obviously, `meido` is the prononciation of `メイド` in Japanese, which means `maid` in English.
